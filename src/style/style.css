@@ -1,0 +1,95 @@
+/* Font */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+/* Main Rules */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Montserrat";
+}
+
+.c-main {
+  color: #ff6060;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  margin: 0 20px;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 145px;
+}
+
+nav div {
+  width: 140px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav div a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 142.6%;
+}
+
+nav div a:first-child {
+  padding-right: 10px;
+}
+
+nav a.active-link {
+  text-decoration: underline;
+}
+
+/* Pages */
+
+div.App {
+  min-height: 100vh;
+}
+
+/* 404 */
+
+.container-404 {
+  min-height: calc(100vh - 67px);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.container-404 h2 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 142.6%;
+}
+
+.container-404 p {
+  font-size: 18px;
+  margin: 0 57px;
+  line-height: 142.6%;
+}
+
+.container-404 a {
+  font-size: 14px;
+  line-height: 142.6%;
+}
