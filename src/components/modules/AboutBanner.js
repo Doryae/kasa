@@ -1,13 +1,13 @@
-import MobileBanner from "../../assets/img/m-home-banner.png"
-import DesktopBanner from "../../assets/img/home-banner.png"
+import MobileBanner from "../../assets/img/m-about-banner.png"
+import DesktopBanner from "../../assets/img/about-banner.png"
 import BrowserWidth from "./BrowserWidth"
 
-export default function HomeBanner() {
+export default function AboutBanner() {
   return (
     <header
       role="banner"
-      className="home-banner">
-      <div className="home-banner-container">
+      className="about-banner">
+      <div className="about-banner-container">
         {BrowserWidth().width < 550 ? (
           <img
             src={MobileBanner}
@@ -20,7 +20,6 @@ export default function HomeBanner() {
           />
         )}
       </div>
-      <h2>Chez vous, partout et ailleurs</h2>
     </header>
   )
 }
