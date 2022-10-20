@@ -1,6 +1,7 @@
 import { useParams, Navigate } from "react-router-dom"
 import Tag from "../modules/Tag"
 import { AiFillStar } from "react-icons/ai"
+import SlideShow from "../modules/SlideShow"
 import Collapse from "../modules/Collapse"
 import Logements from "../../data/logements.json"
 import Footer from "../modules/Footer"
@@ -10,7 +11,6 @@ export default function HousingSheet() {
   BrowserWidth()
 
   const params = useParams().id
-
   const data = Logements.find((el) => el.id === params)
 
   if (data === undefined) {
@@ -20,12 +20,14 @@ export default function HousingSheet() {
   const rating = data.rating - 1
   const message = data.equipments
 
-  console.log(data.pictures)
+  const notOnePicture = data.pictures.length > 1
 
   return (
     <main>
       <div className="page-container p-t-house">
-        <div className="carroussel"></div>
+        <div className="slide-show-container">
+          <SlideShow notOnePicture={notOnePicture} />
+        </div>
         <section>
           <div className="infos">
             <div className="infos-title">

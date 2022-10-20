@@ -281,6 +281,62 @@ div.App {
   margin-top: 27px;
 }
 
+.slide-show-container {
+  width: calc(100% - 40px);
+  margin: 30px auto 10px;
+  height: 255px;
+}
+
+.slide-show {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide-show div {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.slide-show div:first-child {
+  left: 8px;
+}
+
+.slide-show div:nth-child(2) {
+  right: 8px;
+}
+
+.left,
+.right {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-top: 3px solid #f6f6f6;
+  border-left: 3px solid #f6f6f6;
+  box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0.5px;
+}
+
+.left {
+  transform: rotate(-45deg);
+}
+
+.right {
+  transform: rotate(135deg);
+}
+
+.slide-show img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
 .infos {
   width: calc(100% - 40px);
   margin: auto;
@@ -353,6 +409,10 @@ div.App {
   gap: 10px;
 }
 
+.infos-collapse {
+  margin: auto;
+}
+
 /* 404 */
 
 .container-404 {
@@ -389,7 +449,8 @@ div.App {
   .home-banner,
   .about-banner,
   .collapse,
-  .panel-collapse {
+  .panel-collapse,
+  .infos-collapse {
     width: calc(100% - 200px);
   }
 
@@ -406,6 +467,19 @@ div.App {
   }
 
   /* Logement */
+  .slide-show div {
+    width: 25px;
+    height: 25px;
+  }
+
+  .slide-show div:first-child {
+    left: 15px;
+  }
+
+  .slide-show div:nth-child(2) {
+    right: 15px;
+  }
+
   .infos {
     width: calc(100% - 100px);
   }
@@ -502,6 +576,17 @@ div.App {
   }
 
   /* Logement */
+  .slide-show-container {
+    width: calc(100% - 200px);
+    height: 315px;
+    margin: 25px auto 30px;
+  }
+
+  .left,
+  .right {
+    border-top: 5px solid #f6f6f6;
+    border-left: 5px solid #f6f6f6;
+  }
 
   .infos {
     width: calc(100% - 200px);
@@ -568,6 +653,37 @@ div.App {
   /* About */
   .p-t-about {
     padding-top: 44px;
+  }
+
+  /* Logements */
+  .slide-show-container {
+    height: 415px;
+  }
+
+  .slide-show div {
+    width: 35px;
+    height: 35px;
+  }
+
+  .slide-show div:first-child {
+    left: 25px;
+  }
+
+  .slide-show div:nth-child(2) {
+    right: 25px;
+  }
+
+  .infos-collapse {
+    display: flex;
+  }
+
+  .infos-collapse section {
+    width: 50%;
+  }
+
+  .infos-collapse .panel-info {
+    padding: 20px 30px;
+    height: 250px;
   }
 }
 
