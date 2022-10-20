@@ -252,7 +252,7 @@ div.App {
   max-height: 500px;
   margin: auto;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .panel-collapse.close {
@@ -269,10 +269,88 @@ div.App {
   letter-spacing: 0em;
   text-align: justify;
   padding: 10px 15px;
+  border-radius: 0 0 5px 5px;
 }
 
 .panel-info:last-child {
   margin-bottom: 20px;
+}
+
+/* Logement/:id */
+.p-t-house {
+  margin-top: 27px;
+}
+
+.infos {
+  width: calc(100% - 40px);
+  margin: auto;
+}
+
+.infos-title h1,
+.infos-title p,
+.infos-owner p {
+  color: #ff6060;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.infos-title h1 {
+  font-size: 1.8rem;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+.infos-title p {
+  font-size: 1.4rem;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.infos-owner p {
+  font-size: 1.2rem;
+  line-height: 17px;
+}
+
+.infos-owner img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.tag-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 1.8rem;
+  color: #fff;
+  background-color: #ff6060;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 142.6%;
+  letter-spacing: 0em;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.infos-owner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* 404 */
@@ -308,7 +386,6 @@ div.App {
 
 @media all and (min-width: 550px) {
   /* Banner */
-
   .home-banner,
   .about-banner,
   .collapse,
@@ -328,7 +405,19 @@ div.App {
     width: calc(100% - 200px);
   }
 
-  /* About */
+  /* Logement */
+  .infos {
+    width: calc(100% - 100px);
+  }
+
+  .infos-owner img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .infos-collapse .collapse {
+    height: 52px;
+  }
 }
 
 @media all and (min-width: 900px) {
@@ -411,6 +500,32 @@ div.App {
     width: 16px;
     height: 16px;
   }
+
+  /* Logement */
+
+  .infos {
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .infos-title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .rating-container {
+    display: flex;
+    width: 50%;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .infos-collapse .collapse,
+  .infos-collapse .panel-collapse {
+    width: 580px;
+  }
 }
 
 @media all and (min-width: 1440px) {
@@ -463,5 +578,10 @@ div.App {
 
   .box {
     margin: 80px 0 0 0;
+  }
+
+  .infos-owner img {
+    width: 100px;
+    height: 100px;
   }
 }

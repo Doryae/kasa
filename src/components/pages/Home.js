@@ -8,11 +8,6 @@ import Logements from "../../data/logements.json"
 
 const Home = () => {
   BrowserWidth()
-  console.log(BrowserWidth().width)
-
-  if (BrowserWidth().width === 375) {
-    console.log("ici")
-  }
 
   const boxData = Logements
   const [goToUrl, setGoToUrl] = useState(false)

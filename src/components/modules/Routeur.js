@@ -8,10 +8,26 @@ import NotFound from "../pages/NotFound"
 const Routeur = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/logement/:id" element={<HousingSheet />} />
-      <Route path="/*" element={<NotFound />} />
+      <Route
+        path="/"
+        element={<Home />}
+      />
+      <Route
+        path="/about"
+        element={<About />}
+      />
+      <Route
+        path="/logement/:id"
+        element={<HousingSheet />}
+      />
+      <Route
+        path="/404"
+        element={<NotFound />}
+      />
+      <Route
+        path="/*"
+        element={<NotFound />}
+      />
     </Routes>
   )
 }
