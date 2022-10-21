@@ -9,23 +9,23 @@ const Routeur = () => {
   return (
     <Routes>
       <Route
-        path="/"
+        path="kasa/"
         element={<Home />}
       />
       <Route
-        path="/about"
+        path="kasa/about"
         element={<About />}
       />
       <Route
-        path="/logement/:id"
+        path="kasa/logement/:id"
         element={<HousingSheet />}
       />
       <Route
-        path="/404"
+        path="kasa/404"
         element={<NotFound />}
       />
       <Route
-        path="/*"
+        path="kasa/*"
         element={<NotFound />}
       />
     </Routes>
