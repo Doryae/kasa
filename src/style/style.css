@@ -152,6 +152,7 @@ div.App {
   width: 335px;
   height: 255px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .box:hover {
