@@ -386,7 +386,7 @@ div.App {
   justify-content: center;
   align-items: center;
   width: 80px;
-  height: 1.8rem;
+  height: 18px;
   color: #fff;
   background-color: #ff6060;
   border-radius: 5px;
@@ -598,6 +598,11 @@ div.App {
     display: flex;
     flex-direction: column;
     width: 50%;
+  }
+
+  .tag {
+    width: 115px;
+    height: 25px;
   }
 
   .rating-container {
