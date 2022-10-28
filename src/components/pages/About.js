@@ -5,8 +5,15 @@ import Collapse from "../modules/Collapse"
 import Footer from "../modules/Footer"
 
 const About = () => {
+  /*
+  Récupère (à chaque modification) la largeur du navigateur.
+  Permet d'adapter l'image de la banner (Avec la condition liée à la largeur, la source de l'image change (de mobile à desktop)). 
+  */
   BrowserWidth()
 
+  /*
+  Défini une constante possédant un objet en state. 
+  */
   const [infos] = useState([
     {
       title: "Fiabilité",
@@ -31,6 +38,10 @@ const About = () => {
       <div className="page-container p-t-about">
         <AboutBanner />
         <div className="about-container">
+          {/* ~
+          Map le nombre d'objets définis dans la constante Infos. 
+          Pour chaque objet, récupère le titre & le message et le transmet en tant que props à l'élément.
+          */}
           {infos.map((item, index) => {
             return (
               <Collapse

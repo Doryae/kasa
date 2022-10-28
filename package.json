@@ -1,6 +1,4 @@
 {
-  "name": "kasa",
-  "homepage": "https://doryae.github.io/kasa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

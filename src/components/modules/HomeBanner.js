@@ -8,6 +8,12 @@ export default function HomeBanner() {
       role="banner"
       className="home-banner">
       <div className="home-banner-container">
+        {/*
+        Appelle la fonction BrowerWidth(), si la width du navigateur est inférieure à 550px alors :
+        -> Bannière version Mobile. 
+        Sinon :
+        -> Bannière version Desktop.
+        */}
         {BrowserWidth().width < 550 ? (
           <img
             src={MobileBanner}
