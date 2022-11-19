@@ -24,3 +24,12 @@ You may also see any lint errors in the console.
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Language :
+
+
+<div align="center">
+  <img align="center" width="100px" src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png">
+  <img align="center" width="100px" src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+</div>
